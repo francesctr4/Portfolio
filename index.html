@@ -79,7 +79,7 @@
                     <!--  <div class="typed-text text-white">C++ / C# Game Developer</div> -->
                     <h1 class="font-weight-lighter text-white">C++ / C# Game Developer</h1>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="cv/francesctr4_CV.pdf" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a href="cv/francesctr4_CV.pdf" class="btn btn btn-outline-light m-1">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -134,16 +134,18 @@
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="" onclick="openModal1()">
-
-                            <div id="modalWindjammers" class="modal">
-                                <div class="modal-content">
-                                    <span class="close" onclick="closeModal1()">&times;</span>
-                                    <h2>¿Qué es WindowsMotorWheel</h2>
-                                    <img class="img-mini" src="img/portfolio-1.jpg" alt="">
-                                    <img class="img-mini2" src="img/portfolio-1.jpg" alt="">
-                                    <p align = "right">Esto es un texto</p>
+                            <!-- <div id="background" class="modal-overlay" alt=""> -->
+                                <div id="modalWindjammers" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal1()">&times;</span>
+                                        <h2 class="titulo" align = "center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                        <img class="img-mini" src="img/portfolio-1.jpg" alt="">
+                                        <img class="img-mini2" src="img/portfolio-1.jpg" alt="">
+                                        <p align = "right">Esto es un texto</p>
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
+                        </img>
 <!--                            <a href="https://github.com/francesctr4/Motorwheel-Studios">-->
 <!--                            </a>-->
                     </div>
@@ -348,6 +350,13 @@
         }
         function closeModal7() {
             document.getElementById("modalBatReverb").style.display = "none";
+        }
+
+        function activateBackground() {
+
+            var div = document.getElementById("background");
+            div.style.display = "block";
+
         }
 
     </script>
