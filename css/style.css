@@ -531,9 +531,25 @@ mark,
 }
 
 .img-mini {
-  max-width: 25%;
-  height: 25%;
+
+  width: 400px;
+  height: 300px;
+  position: relative; 
+  top: 216px; 
+  left: 122px;
+
 }
+
+.img-mini2 {
+
+  width: 400px;
+  height: 300px;
+  position: absolute; 
+  top: 216px; 
+  left: 122px;
+  
+}
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -10035,11 +10051,13 @@ h6,
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #f1f1f1;
   width: 100%;
   height: 100%;
   /*border: 1px solid #888;*/
   /*width: 80%;*/
+  border-radius: 58px;
+  border: 0px;
 }
 
 .close {
