@@ -1955,3 +1955,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 }
+
+
+/* === FIXES FOR MOBILE STYLING ISSUES === */
+
+/* Fix blurry or inconsistent navbar background on mobile */
+@media (max-width: 767px) {
+  .navbar {
+    background: hsl(240, 1%, 17%);
+    backdrop-filter: none;
+  }
+}
+
+/* Clamp portfolio project descriptions to 3 lines for uniformity */
+.project-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+}
