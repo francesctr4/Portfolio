@@ -2244,6 +2244,22 @@ textarea.form-input::-webkit-resizer {
 
 /* Fix blurry or inconsistent navbar background on mobile */
 @media (max-width: 1250px) {
+
+  .form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
   .navbar {
     background: hsl(240, 1%, 17%);
     backdrop-filter: none;
@@ -2260,7 +2276,7 @@ textarea.form-input::-webkit-resizer {
     margin-left: 10px;
     margin-right: 10px;
   }
-  
+
   .project-date {
     color: var(--orange-yellow-crayola) !important;
     font-size: var(--fs-7);
@@ -2280,6 +2296,19 @@ textarea.form-input::-webkit-resizer {
     font-size: var(--fs-6);
     line-height: 1.6;
   }
+
+    .timeline-text.job-title {
+    font-weight: var(--fw-500);
+    color: var(--bittersweet-shimmer);
+    margin-bottom: 5px;
+  }
+
+  /* Add this to your CSS */
+  .skill .title-wrapper h5 {
+    /* Targets individual skill/language titles */
+    color: var(--vegas-gold) !important;
+  }
+
 }
 
 /* Clamp portfolio project descriptions to 3 lines for uniformity */
