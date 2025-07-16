@@ -2,392 +2,1151 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Francesc Teruel - Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!-- <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Francesc </span> Teruel</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Francesc Teruel" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Francesc Teruel">Francesc Teruel</h1>
+
+          <p class="title">C++ Software Engineer</p>
+
+          <br>
+
+          <a href="./assets/cv/francesc_teruel_CV.pdf">
+            <button class="form-btn">
+              <ion-icon name="download"></ion-icon>
+              <span>Download CV</span>
+            </button>
+          </a>
+
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
         </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <a href="cv/francesctr4_CV.pdf" class="btn btn-outline-primary d-none d-lg-block">Download CV</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:francesc.tr03@gmail.com" class="contact-link">francesc.tr03@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+34 646 74 54 50" class="contact-link">+34 646 74 54 50</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="10-25">October 25, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Martorell, Spain</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/francesc-teruel-rodriguez/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/francesctr4" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
 
 
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a software engineer with a strong passion for game development, specializing in game engine
+            architecture, graphics programming and performance optimization. Outside of games, I enjoy building
+            cross-platform software, with careful attention to managing dependencies and delivering the highest quality.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Interests</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Engineering</h4>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Development</h4>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Engine Programming</h4>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Graphics Programming</h4>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="service">
+
+
+          <h3 class="h3 service-title">Hobbies</h3>
+
+          <section class="about-text">
+            <p>
+              Outside of work, I enjoy diving into video games like Monster Hunter, Soulslikes, and Metroidvanias, which are my favourite genres. 
+              I'm also passionate about horror across all forms of media — from games to movies — and I love the thrill
+              of escape rooms. In my free time, I stay active through hiking and biking, and I often unwind by working on personal projects
+              just for the fun of it.
+            </p>
+          </section>
+
+          
+
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
             <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
             </div>
+
+          </section>
+
         </div>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Hard Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Development Environments</h5>
+                <data value="80"> - Visual Studio, VS Code, CLion</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages</h5>
+                <data value="70"> - C, C++, C#</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Cross-Platform Development</h5>
+                <data value="50"> - CMake, vcpkg</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphics APIs</h5>
+                <data value="90"> - OpenGL, Vulkan (+ GLSL)</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Game Engines</h5>
+                <data value="50"> - Unity, Unreal, Proprietary</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Other Skills</h5>
+                <data value="50"> - SQL, Figma, Agile</data>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <br>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Languages</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Spanish</h5>
+                <data value="80"> - Native (C2)</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Catalan</h5>
+                <data value="70"> - Native (C2)</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">English</h5>
+                <data value="90"> - Intermediate (B2)</data>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <br>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Payfit</h4>
+              <span>September 2024 — March 2025</span>
+              <p class="timeline-text job-title">
+                Product Builder Intern
+              </p>
+              <p class="timeline-text">
+                Use of proprietary software of the company (low-code ‘JetLang’) for the automation of payroll
+                calculation,
+                contract management, bonuses, configuration and updating of collective agreements of employees from
+                other
+                client companies. Improvements in the UX/UI of the company's product.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Decathlon</h4>
+              <span>July 2024 — August 2024</span>
+              <p class="timeline-text job-title">
+                Package Technical Operator
+              </p>
+              <p class="timeline-text">
+                Storage, preparation, classification, packaging and dispatch of online purchases made by users on
+                Decathlon.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Decathlon</h4>
+              <span>July 2023 — August 2023</span>
+              <p class="timeline-text job-title">
+                Package Technical Operator
+              </p>
+              <p class="timeline-text">
+                Storage, preparation, classification, packaging and dispatch of online purchases made by users on
+                Decathlon.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Centre de la Imatge i la Tecnologia Multimèdia (CITM UPC), Terrassa
+              </h4>
+
+              <span>September 2021 — July 2025</span>
+
+              <p class="timeline-text">
+                University Degree in Video Game Design and Development
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">INS Joan Oró, Martorell</h4>
+
+              <span>September 2019 — June 2021</span>
+
+              <p class="timeline-text">
+                Scientific and Technological Baccalaureate
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Software Engineering</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Game Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Engine Programming</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Graphics Programming</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Software Engineering</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Game Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Engine Programming</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Graphics Programming</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="engine programming">
+              <a href="https://github.com/francesctr4/Nous-Engine">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="Nous Engine" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Nous Engine (TFG)</h3>
+                  <p class="project-category">Engine Programming</p>
+                  <span class="project-date">11/07/2025</span>
+                  <p class="project-description">Multithreaded, Vulkan-based game engine developed in C++ as part of my
+                    bachelor's thesis.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/Level-Design-P3_Fungal-Forest">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Fungal Forest Blockout" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Fungal Forest Blockout</h3>
+                  <p class="project-category">Level Design</p>
+                  <span class="project-date">10/06/2025</span>
+                  <p class="project-description">3D level blockout inspired by Spyro the Dragon made in Unreal Engine 5.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="graphics programming">
+              <a href="https://github.com/francesctr4/AGP-Deferred_PBR_SSAO">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.jpg" alt="Deferred PBR + IBL & SSAO" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Deferred PBR + IBL & SSAO</h3>
+                  <p class="project-category">Graphics Programming</p>
+                  <span class="project-date">09/06/2025</span>
+                  <p class="project-description">Deferred PBR + IBL and SSAO implementation in C++ using OpenGL.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="graphics programming">
+              <a href="https://github.com/francesctr4/AGP-P1-Ray_Tracing">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="3D Ray Tracer" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">3D Ray Tracer</h3>
+                  <p class="project-category">Graphics Programming</p>
+                  <span class="project-date">14/03/2025</span>
+                  <p class="project-description">3D Ray Tracing shader implementation on Shadertoy.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/Dreamward_Co-op">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.jpg" alt="Dreamward Co-op" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Dreamward Co-op</h3>
+                  <p class="project-category">Game Development</p>
+                  <span class="project-date">13/01/2025</span>
+                  <p class="project-description">Two-player co-op mode implementation into Dreamward using UDP.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/Data-Analysis-P3_Heatmap">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.jpg" alt="Visual Data Analysis Tool" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Visual Data Analysis Tool</h3>
+                  <p class="project-category">Feature</p>
+                  <span class="project-date">10/01/2025</span>
+                  <p class="project-description">Heatmap tool for Unity to collect, analyze and visualize player data in
+                    the editor.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/Netcode-Lab2-TCP_UDP">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.jpg" alt="TCP/UDP Server Chat" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">TCP/UDP Server Chat</h3>
+                  <p class="project-category">Feature</p>
+                  <span class="project-date">17/10/2024</span>
+                  <p class="project-description">Live chat demo using TCP/UDP socket connection in Unity.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/Clapcom-Studios/Alien-Extraction">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="Alien Extraction" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Alien Extraction</h3>
+                  <p class="project-category">Game Development</p>
+                  <span class="project-date">10/06/2024</span>
+                  <p class="project-description">Diablo-like 3D extraction game developed by a group of 35 students on
+                    Ymir Engine.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/EscapeRoomVR">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.jpg" alt="Escape Room VR" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Escape Room VR</h3>
+                  <p class="project-category">Game Development</p>
+                  <span class="project-date">04/06/2024</span>
+                  <p class="project-description">Virtual Reality prototype with Hand Tracking made on Unity using XR
+                    Interaction Toolkit.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="graphics programming">
+              <a href="https://github.com/francesctr4/HelloVulkan">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-10.jpg" alt="Vulkan Integration" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Vulkan Integration</h3>
+                  <p class="project-category">Graphics Programming</p>
+                  <span class="project-date">30/01/2024</span>
+                  <p class="project-description">Vulkan integration from scratch in C++ using SDL2, glmath, stb_image
+                    and Assimp.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="engine programming">
+              <a href="https://github.com/francesctr4/Ymir-Engine">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-11.jpg" alt="Ymir Engine" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Ymir Engine</h3>
+                  <p class="project-category">Engine Programming</p>
+                  <span class="project-date">07/01/2024</span>
+                  <p class="project-description">Game engine developed from scratch in C++ using SDL2, OpenGL and third
+                    party libraries.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/IA-Project-GameSceneAI">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-12.jpg" alt="Unity AI Playground" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Unity AI Playground</h3>
+                  <p class="project-category">Feature</p>
+                  <span class="project-date">30/12/2023</span>
+                  <p class="project-description">Implementation of several AI algorythms in a single Unity scene.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              <a href="https://github.com/francesctr4/FlutterAppProject">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-13.jpg" alt="Public Transport App" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Public Transport App</h3>
+                  <p class="project-category">Mobile App Prototype</p>
+                  <span class="project-date">30/12/2023</span>
+                  <p class="project-description">Public transport app prototype using Dart & Flutter.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              <a href="https://github.com/francesctr4/TrainerStoreScreen">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-14.jpg" alt="Trainer Store Screen" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Trainer Store Screen</h3>
+                  <p class="project-category">Mobile App Prototype</p>
+                  <span class="project-date">08/11/2023</span>
+                  <p class="project-description">Simple app screen using Dart & Flutter.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/6a-CITM-Game-Jam_Nexus-Studios-Lite">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-15.jpg" alt="Bat Reverb" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Bat Reverb</h3>
+                  <p class="project-category">Game Development</p>
+                  <span class="project-date">21/06/2023</span>
+                  <p class="project-description">2D metroidvania made in Unity for a 5-day Game Jam.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/Nexus-Studios">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-16.jpg" alt="Dragged Off Time" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Dragged Off Time</h3>
+                  <p class="project-category">Game Development</p>
+                  <span class="project-date">14/06/2023</span>
+                  <p class="project-description">2D action RPG made in C++ with SDL2, Tiled, Pugixml and Box2D.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/Sandstone-Temple">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-17.jpg" alt="Sandstone Temple" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Sandstone Temple</h3>
+                  <p class="project-category">Level Design</p>
+                  <span class="project-date">22/05/2023</span>
+                  <p class="project-description">Temple 3D environment modelled in Maya and assembled in Unity.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/SplitScreen">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-18.jpg" alt="Split Screen" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Split Screen</h3>
+                  <p class="project-category">Feature</p>
+                  <span class="project-date">20/03/2023</span>
+                  <p class="project-description">Split screen implementation with C++ and SDL2.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/Canine-Duo">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-19.jpg" alt="Windbearer" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Windbearer</h3>
+                  <p class="project-category">Game Development</p>
+                  <span class="project-date">29/01/2023</span>
+                  <p class="project-description">2D plataformer made in C++ with SDL2, Tiled, Pugixml and Box2D.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              <a href="https://github.com/francesctr4/Project-MATVJII">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-23.jpg" alt="Holroyd's Arcball Tool" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Holroyd's Arcball Tool</h3>
+                  <p class="project-category">Software Engineering</p>
+                  <span class="project-date">27/01/2023</span>
+                  <p class="project-description">App developed in Python to control the orientation of 3D shapes by
+                    using mouse input.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering">
+              <a
+                href="https://www.figma.com/proto/39ZQ2EHAYYMVVIJHG9SBCS/Discode%3A-Design-%26-Prototype?page-id=0%3A1&node-id=1-14&viewport=268%2C536%2C0.28&scaling=scale-down&starting-point-node-id=1%3A14">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-20.jpg" alt="Discode" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Discode</h3>
+                  <p class="project-category">Mobile App UI/UX</p>
+                  <span class="project-date">23/01/2023</span>
+                  <p class="project-description">App prototype for learning to code, inspired by Duolingo and designed
+                    in Figma.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/WeBallin-Pinball">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-22.jpg" alt="Kirby's Pinball Land Tribute" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Kirby's Pinball Land Tribute</h3>
+                  <p class="project-category">Game Development</p>
+                  <span class="project-date">20/11/2022</span>
+                  <p class="project-description">Tribute to Kirby's Pinball Land from Game Boy (1993) using C++ and
+                    Box2D.</p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/francesctr4/Motorwheel-Studios">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-21.jpg" alt="Windjammers Tribute" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+                  <h3 class="project-title">Windjammers Tribute</h3>
+                  <p class="project-category">Game Development</p>
+                  <span class="project-date">06/06/2022</span>
+                  <p class="project-description">Tribute to Windjammers from Neo Geo arcade system (1994) using C++ and
+                    SDL2.</p>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
     </div>
-    <!-- Video Modal End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Francesc Teruel</h1>
-<!--                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1> -->
-                    <!--  <div class="typed-text text-white">C++ / C# Game Developer</div> -->
-                    <h1 class="font-weight-lighter text-white">C++ / C# Game Developer</h1>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="cv/francesctr4_CV.pdf" class="btn btn btn-outline-light m-1">Download CV</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
+  </main>
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Profile</h3>
-                    <p>Game Developer in C++ and C# with high focus on low-level systems. Really interested in Graphics Programming and
-                        Engine Development, which are the areas I want to pursue professionally. I am looking for an opportunity to start working
-                        as a developer, either in the video game or software industry.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Phone number: <span class="text-secondary">+34 646 745 450</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>E-Mail: <span class="text-secondary">francesc.tr03@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">08760 Martorell, Spain</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Languages: <span class="text-secondary">Spanish, Catalan, English</span></h6></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-    
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <!-- Star icon -->
-                        <i class="fas fa-star position-absolute top-0 end-0 text-warning" style="font-size: 24px; margin: 10px;"></i>
-
-                        <img class="img-fluid rounded w-100" src="img/portfolio-13.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="projects/alien-extraction.html">
-                                <i class="fas fa-external-link-alt text-white"></i> <!-- Optional: Change icon -->
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-14.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/EscapeRoomVR">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <!-- Star icon -->
-                        <i class="fas fa-star position-absolute top-0 end-0 text-warning" style="font-size: 24px; margin: 10px;"></i>
-
-                        <img class="img-fluid rounded w-100" src="img/portfolio-12.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/HelloVulkan">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-
-                        <!-- Star icon -->
-                        <i class="fas fa-star position-absolute top-0 end-0 text-warning" style="font-size: 24px; margin: 10px;"></i>
-
-                        <img class="img-fluid rounded w-100" src="img/portfolio-11.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/Ymir-Engine">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-10.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/IA-Project-GameSceneAI">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item fifth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-9.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/FlutterAppProject">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item sixth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-8.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/TrainerStoreScreen">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item seventh">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-7.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/6a-CITM-Game-Jam_Nexus-Studios-Lite">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item eight">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/Nexus-Studios">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item nine">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/Sandstone-Temple">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item ten">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/SplitScreen">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item eleven">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/Canine-Duo">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item twelve">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://www.figma.com/proto/39ZQ2EHAYYMVVIJHG9SBCS/Discode%3A-Design-%26-Prototype?page-id=0%3A1&node-id=1-14&viewport=268%2C536%2C0.28&scaling=scale-down&starting-point-node-id=1%3A14">
-                                <i class="fab fa-figma text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item thirteen">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://github.com/francesctr4/Motorwheel-Studios">
-                                <i class="fab fa-github text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="https://twitter.com/francesctr4"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://linkedin.com/in/francesc-teruel-rodriguez"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="https://github.com/francesctr4"><i class="fab fa-github"></i></a>
-            </div>
-            <!-- <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Privacy</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Terms</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Help</a> 
-            </div> 
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p> -->
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
 
-    <script>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-        function openModal1() {
-            document.getElementById("modalWindjammers").style.display = "block";
-        }
-        function openModal2() {
-            document.getElementById("modalDiscode").style.display = "block";
-        }
-        function openModal3() {
-            document.getElementById("modalWindbearer").style.display = "block";
-        }
-        function openModal4() {
-            document.getElementById("modalSplitScreen").style.display = "block";
-        }
-        function openModal5() {
-            document.getElementById("modalSandstoneTemple").style.display = "block";
-        }
-        function openModal6() {
-            document.getElementById("modalDraggedOffTime").style.display = "block";
-        }
-        function openModal7() {
-            document.getElementById("modalBatReverb").style.display = "block";
-        }
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        function closeModal1() {
-            document.getElementById("modalWindjammers").style.display = "none";
-        }
-        function closeModal2() {
-            document.getElementById("modalDiscode").style.display = "none";
-        }
-        function closeModal3() {
-            document.getElementById("modalWindbearer").style.display = "none";
-        }
-        function closeModal4() {
-            document.getElementById("modalSplitScreen").style.display = "none";
-        }
-        function closeModal5() {
-            document.getElementById("modalSandstoneTemple").style.display = "none";
-        }
-        function closeModal6() {
-            document.getElementById("modalDraggedOffTime").style.display = "none";
-        }
-        function closeModal7() {
-            document.getElementById("modalBatReverb").style.display = "none";
-        }
-
-        function activateBackground() {
-
-            var div = document.getElementById("background");
-            div.style.display = "block";
-
-        }
-
-    </script>
-        
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
