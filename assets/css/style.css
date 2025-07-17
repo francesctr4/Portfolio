@@ -2322,3 +2322,24 @@ textarea.form-input::-webkit-resizer {
   font-size: var(--fs-6);
   line-height: 1.6;
 }
+
+.skills-item {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  padding: 15px;
+}
+
+.skills-item {
+  word-break: break-word;
+}
+
+.skill-category {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-500);
+}
